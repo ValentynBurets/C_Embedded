@@ -1,0 +1,3 @@
+math_function_2d.c:6:6:math_function_2d_construct	24	static
+math_function_2d.c:13:9:math_function_2d_get_y	48	static
+math_function_2d.c:49:9:math_function_get_fx	16	static

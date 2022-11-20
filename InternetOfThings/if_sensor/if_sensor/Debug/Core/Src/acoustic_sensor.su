@@ -1,0 +1,11 @@
+acoustic_sensor.c:13:6:acoustic_sensor_init	24	static
+acoustic_sensor.c:28:6:acoustic_sensor_run	16	static
+acoustic_sensor.c:36:6:acoustic_sensor_start	16	static
+acoustic_sensor.c:41:6:acoustic_sensor_stop	16	static
+acoustic_sensor.c:46:10:acoustic_sensor_get_distance	16	static
+acoustic_sensor.c:51:7:acoustic_sensor_idle_handler	16	static
+acoustic_sensor.c:61:7:acoustic_sensor_trig_start_handler	16	static
+acoustic_sensor.c:69:7:acoustic_sensor_trig_handler	16	static
+acoustic_sensor.c:80:7:acoustic_sensor_echo_start_handler	24	static
+acoustic_sensor.c:93:7:acoustic_sensor_echo_handler	24	static
+acoustic_sensor.c:111:10:acoustic_sensor_convert_duration	16	static

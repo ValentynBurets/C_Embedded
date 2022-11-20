@@ -1,0 +1,326 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.34.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Valentyn Burets, nulp, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.34.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.34.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      UL2CM3.DLL V1.163.9.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+C:\Users\Valentyn\study\TERM3.2\EmbeddedSystem\lab3\lab3.uvprojx
+Project File Date:  03/20/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+LEDTask.c(13): warning: unused parameter 'argument' [-Wunused-parameter]
+void greenLEDTask(void const *argument){
+                              ^
+LEDTask.c(13): warning: function 'greenLEDTask' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+void greenLEDTask(void const *argument){
+                                       ^
+LEDTask.c(26): warning: unused parameter 'argument' [-Wunused-parameter]
+void orangeLEDTask(void const *argument){
+                               ^
+LEDTask.c(26): warning: function 'orangeLEDTask' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+void orangeLEDTask(void const *argument){
+                                        ^
+LEDTask.c(40): warning: unused parameter 'argument' [-Wunused-parameter]
+void redLEDTask(void const *argument){
+                            ^
+LEDTask.c(40): warning: function 'redLEDTask' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+void redLEDTask(void const *argument){
+                                     ^
+LEDTask.c(49): warning: unused parameter 'argument' [-Wunused-parameter]
+void blueLEDTask(void const *argument){
+                             ^
+LEDTask.c(49): warning: function 'blueLEDTask' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+void blueLEDTask(void const *argument){
+                                      ^
+8 warnings generated.
+compiling LEDTask.c...
+main.c(6): warning: In file included from...
+C:/Users/Valentyn/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_gpio.h(29): warning: In file included from...
+C:/Users/Valentyn/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h(91): warning: 'USE_RTOS' is not defined, evaluates to 0 [-Wundef]
+#if (USE_RTOS == 1U)
+     ^
+main.c(17): warning: no previous extern declaration for non-static variable 'os_timer_def_TimerGreenLED' [-Wmissing-variable-declarations]
+osTimerDef (TimerGreenLED, TimerGreenLED_Callback);
+^
+C:/Users/Valentyn/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS/RTX/INC\cmsis_os.h(345): note: expanded from macro 'osTimerDef'
+const osTimerDef_t os_timer_def_##name = \
+                   ^
+<scratch space>(11): note: expanded from here
+os_timer_def_TimerGreenLED
+^
+main.c(17): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+C:/Users/Valentyn/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS/RTX/INC\cmsis_os.h(345): note: expanded from macro 'osTimerDef'
+const osTimerDef_t os_timer_def_##name = \
+      ^
+main.c(18): warning: no previous extern declaration for non-static variable 'os_timer_def_TimerOrangeLED' [-Wmissing-variable-declarations]
+osTimerDef (TimerOrangeLED, TimerOrangeLED_Callback);
+^
+C:/Users/Valentyn/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS/RTX/INC\cmsis_os.h(345): note: expanded from macro 'osTimerDef'
+const osTimerDef_t os_timer_def_##name = \
+                   ^
+<scratch space>(14): note: expanded from here
+os_timer_def_TimerOrangeLED
+^
+main.c(18): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+C:/Users/Valentyn/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS/RTX/INC\cmsis_os.h(345): note: expanded from macro 'osTimerDef'
+const osTimerDef_t os_timer_def_##name = \
+      ^
+main.c(21): warning: no previous extern declaration for non-static variable 'os_thread_def_redLEDTask' [-Wmissing-variable-declarations]
+osThreadDef(redLEDTask, osPriorityNormal, 1, 0);
+^
+C:/Users/Valentyn/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS/RTX/INC\cmsis_os.h(277): note: expanded from macro 'osThreadDef'
+const osThreadDef_t os_thread_def_##name = \
+                    ^
+<scratch space>(16): note: expanded from here
+os_thread_def_redLEDTask
+^
+main.c(21): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+C:/Users/Valentyn/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS/RTX/INC\cmsis_os.h(277): note: expanded from macro 'osThreadDef'
+const osThreadDef_t os_thread_def_##name = \
+      ^
+main.c(22): warning: no previous extern declaration for non-static variable 'os_thread_def_blueLEDTask' [-Wmissing-variable-declarations]
+osThreadDef(blueLEDTask, osPriorityNormal, 1, 0);
+^
+C:/Users/Valentyn/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS/RTX/INC\cmsis_os.h(277): note: expanded from macro 'osThreadDef'
+const osThreadDef_t os_thread_def_##name = \
+                    ^
+<scratch space>(17): note: expanded from here
+os_thread_def_blueLEDTask
+^
+main.c(22): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+C:/Users/Valentyn/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS/RTX/INC\cmsis_os.h(277): note: expanded from macro 'osThreadDef'
+const osThreadDef_t os_thread_def_##name = \
+      ^
+main.c(24): warning: no previous extern declaration for non-static variable 'os_thread_def_greenLEDTask' [-Wmissing-variable-declarations]
+osThreadDef(greenLEDTask, osPriorityNormal, 1, 0);
+^
+C:/Users/Valentyn/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS/RTX/INC\cmsis_os.h(277): note: expanded from macro 'osThreadDef'
+const osThreadDef_t os_thread_def_##name = \
+                    ^
+<scratch space>(18): note: expanded from here
+os_thread_def_greenLEDTask
+^
+main.c(24): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+C:/Users/Valentyn/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS/RTX/INC\cmsis_os.h(277): note: expanded from macro 'osThreadDef'
+const osThreadDef_t os_thread_def_##name = \
+      ^
+main.c(25): warning: no previous extern declaration for non-static variable 'os_thread_def_orangeLEDTask' [-Wmissing-variable-declarations]
+osThreadDef(orangeLEDTask, osPriorityNormal, 1, 0);
+^
+C:/Users/Valentyn/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS/RTX/INC\cmsis_os.h(277): note: expanded from macro 'osThreadDef'
+const osThreadDef_t os_thread_def_##name = \
+                    ^
+<scratch space>(19): note: expanded from here
+os_thread_def_orangeLEDTask
+^
+main.c(25): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+C:/Users/Valentyn/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS/RTX/INC\cmsis_os.h(277): note: expanded from macro 'osThreadDef'
+const osThreadDef_t os_thread_def_##name = \
+      ^
+main.c(70): warning: no previous extern declaration for non-static variable 'greenLEDCounter' [-Wmissing-variable-declarations]
+short greenLEDCounter = 0;
+      ^
+main.c(70): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+short greenLEDCounter = 0;
+^
+main.c(71): warning: no previous extern declaration for non-static variable 'orangeLEDCounter' [-Wmissing-variable-declarations]
+short orangeLEDCounter = 0;
+      ^
+main.c(71): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+short orangeLEDCounter = 0;
+^
+main.c(72): warning: unused parameter 'arg' [-Wunused-parameter]
+void TimerGreenLED_Callback (void const *arg){
+                                         ^
+main.c(82): warning: unused parameter 'arg' [-Wunused-parameter]
+void TimerOrangeLED_Callback (void const *arg){
+                                          ^
+main.c(17): warning: no previous extern declaration for non-static variable 'os_timer_cb_TimerGreenLED' [-Wmissing-variable-declarations]
+osTimerDef (TimerGreenLED, TimerGreenLED_Callback);
+^
+C:/Users/Valentyn/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS/RTX/INC\cmsis_os.h(344): note: expanded from macro 'osTimerDef'
+uint32_t os_timer_cb_##name[6]; \
+         ^
+<scratch space>(10): note: expanded from here
+os_timer_cb_TimerGreenLED
+^
+main.c(17): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+C:/Users/Valentyn/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS/RTX/INC\cmsis_os.h(343): note: expanded from macro 'osTimerDef'
+#define osTimerDef(name, function)  \
+                                    ^
+main.c(18): warning: no previous extern declaration for non-static variable 'os_timer_cb_TimerOrangeLED' [-Wmissing-variable-declarations]
+osTimerDef (TimerOrangeLED, TimerOrangeLED_Callback);
+^
+C:/Users/Valentyn/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS/RTX/INC\cmsis_os.h(344): note: expanded from macro 'osTimerDef'
+uint32_t os_timer_cb_##name[6]; \
+         ^
+<scratch space>(13): note: expanded from here
+os_timer_cb_TimerOrangeLED
+^
+main.c(18): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+C:/Users/Valentyn/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS/RTX/INC\cmsis_os.h(343): note: expanded from macro 'osTimerDef'
+#define osTimerDef(name, function)  \
+                                    ^
+13 warnings generated.
+compiling main.c...
+compiling RTX_Conf_CM.c...
+lightutils.c(2): warning: In file included from...
+C:/Users/Valentyn/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_gpio.h(29): warning: In file included from...
+C:/Users/Valentyn/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h(91): warning: 'USE_RTOS' is not defined, evaluates to 0 [-Wundef]
+#if (USE_RTOS == 1U)
+     ^
+1 warning generated.
+compiling lightutils.c...
+LEDInit.c(2): warning: In file included from...
+C:/Users/Valentyn/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_gpio.h(29): warning: In file included from...
+C:/Users/Valentyn/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h(91): warning: 'USE_RTOS' is not defined, evaluates to 0 [-Wundef]
+#if (USE_RTOS == 1U)
+     ^
+LEDInit.c(10): warning: In file included from...
+C:/Users/Valentyn/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS/RTX/INC\cmsis_os.h(73): warning: '__NO_RETURN' macro redefined [-Wmacro-redefined]
+#define __NO_RETURN __attribute__((noreturn))
+        ^
+C:/Users/Valentyn/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include/cmsis_armclang.h(50): note: previous definition is here
+  #define __NO_RETURN                            __attribute__((__noreturn__))
+          ^
+2 warnings generated.
+compiling LEDInit.c...
+compiling stm32f4xx_hal.c...
+C:/Users/Valentyn/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c(217): warning: function 'HAL_NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+C:/Users/Valentyn/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c(83): warning: In file included from...
+C:/Users/Valentyn/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F407VGTx\stm32f4xx_hal_conf.h(415): warning: In file included from...
+C:/Users/Valentyn/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_cortex.h(54): warning: padding struct 'MPU_Region_InitTypeDef' with 2 bytes to align 'BaseAddress' [-Wpadded]
+  uint32_t               BaseAddress;           /*!< Specifies the base address of the region to protect.                           */
+                         ^
+2 warnings generated.
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+C:/Users/Valentyn/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.15.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c(365): warning: unused parameter 'Regulator' [-Wunused-parameter]
+void HAL_PWR_EnterSLEEPMode(uint32_t Regulator, uint8_t SLEEPEntry)
+                                     ^
+1 warning generated.
+compiling stm32f4xx_hal_pwr.c...
+assembling startup_stm32f407xx.s...
+compiling stm32f4xx_hal_rcc.c...
+compiling system_stm32f4xx.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+linking...
+Program Size: Code=7484 RO-data=588 RW-data=44 ZI-data=4040  
+".\Objects\lab3.axf" - 0 Error(s), 27 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: RTOS Version: 1.0.0
+   * Component: CORE Version: 5.4.0
+   * Component: Keil RTX Version: 4.82.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.15.0.pack
+                Keil.STM32F4xx_DFP.2.15.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: STM32Cube Framework Version: 1.0.0
+   * Component: Classic Version: 1.7.9
+   * Component: Common Version: 1.7.9
+   * Component: Cortex Version: 1.7.9
+   * Component: GPIO Version: 1.7.9
+   * Component: PWR Version: 1.7.9
+   * Component: RCC Version: 1.7.9
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\STM32F407VGTx
+  .\RTE\_Target_1
+  C:\Users\Valentyn\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\Valentyn\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\RTOS\RTX\INC
+  C:\Users\Valentyn\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+  C:\Users\Valentyn\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::CMSIS:RTOS:1.0.0 (API)
+
+   * Component: ::Device:STM32Cube Framework:1.0.0 (API)
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: ARM::CMSIS:RTOS:Keil RTX:4.82.0
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\MailQueue.c
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\MemPool.c
+      Include file:  CMSIS\RTOS\RTX\UserCodeTemplates\osObjects.h
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\MsgQueue.c
+      Source file:   CMSIS\RTOS\RTX\Templates\RTX_Conf_CM.c
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\main.c
+      Include file:  CMSIS\RTOS\RTX\INC\cmsis_os.h
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\Timer.c
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\Mutex.c
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\Semaphore.c
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\Thread.c
+      Library file:  CMSIS\RTOS\RTX\LIB\ARM\RTX_CM4.lib
+      Source file:   CMSIS\RTOS\RTX\SRC\ARM\SVC_Table.s
+
+   * Component: Keil::Device:STM32Cube Framework:Classic:1.7.9
+      Include file:  CMSIS\Driver\Config\RTE_Device.h
+      Include file:  MDK\Templates\Inc\stm32f4xx_hal_conf.h
+      Source file:   MDK\Templates\Src\stm32f4xx_hal_msp.c
+      Include file:  MDK\Templates\Inc\stm32f4xx_it.h
+      Source file:   MDK\Templates\Src\stm32f4xx_it.c
+      Source file:   MDK\Templates\Src\main.c
+      Include file:  MDK\Templates_LL\Inc\main.h
+      Include file:  MDK\Templates\Inc\main.h
+      Source file:   MDK\Templates_LL\Src\main.c
+
+   * Component: Keil::Device:STM32Cube HAL:Common:1.7.9
+      Include file:  Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c
+
+   * Component: Keil::Device:STM32Cube HAL:Cortex:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c
+
+   * Component: Keil::Device:STM32Cube HAL:GPIO:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c
+
+   * Component: Keil::Device:STM32Cube HAL:PWR:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:RCC:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c
+
+   * Component: Keil::Device:Startup:2.6.3
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   MDK\Device\Source\ARM\STM32F40xxx_41xxx_OPT.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

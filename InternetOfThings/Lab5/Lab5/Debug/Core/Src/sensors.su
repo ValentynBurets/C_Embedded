@@ -1,0 +1,7 @@
+sensors.c:14:9:delay_get_us_tick	4	static
+sensors.c:21:6:ir_sensor_init	16	static
+sensors.c:35:10:ir_sensor_read	32	static
+sensors.c:50:10:ir_sensor_get_distance	16	static
+sensors.c:59:6:acoustic_sensor_init	24	static
+sensors.c:67:10:acoustic_sensor_read	24	static
+sensors.c:80:10:acoustic_sensor_convert_duration	16	static

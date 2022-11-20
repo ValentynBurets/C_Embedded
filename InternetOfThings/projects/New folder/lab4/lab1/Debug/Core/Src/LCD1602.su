@@ -1,0 +1,14 @@
+LCD1602.c:3:6:lcdSend	16	static
+LCD1602.c:22:6:lcdCommand	16	static
+LCD1602.c:26:6:lcdChar	16	static
+LCD1602.c:30:6:setCursor	16	static
+LCD1602.c:35:6:parametrsToggle	24	static
+LCD1602.c:43:6:shiftToggle	24	static
+LCD1602.c:50:6:scrollRight	8	static
+LCD1602.c:54:6:scrollLeft	8	static
+LCD1602.c:58:6:clear	8	static
+LCD1602.c:64:6:home	8	static
+LCD1602.c:70:6:initLCD	8	static
+LCD1602.c:84:6:lcdString	24	static
+LCD1602.c:90:5:isIndexInBoundsOfString	32	static
+LCD1602.c:100:6:lcdSubString	32	static

@@ -1,0 +1,4 @@
+DH11.c:11:6:microDelay	16	static
+DH11.c:17:9:DHT11_Start	104	static
+DH11.c:51:9:DHT11_Read	88	static
+DH11.c:77:6:DHT11_GetData	80	static

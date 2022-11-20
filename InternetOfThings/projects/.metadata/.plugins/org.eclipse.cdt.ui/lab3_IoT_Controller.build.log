@@ -1,0 +1,10 @@
+15:18:14 **** Build of configuration Debug for project lab3_IoT_Controller ****
+make -j8 all 
+arm-none-eabi-size   lab3_IoT_Controller.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5756	     20	   1572	   7348	   1cb4	lab3_IoT_Controller.elf
+Finished building: default.size.stdout
+ 
+
+15:18:14 Build Finished. 0 errors, 0 warnings. (took 313ms)
+

@@ -1,0 +1,28 @@
+11:06:01 **** Incremental Build of configuration Debug for project Lab4DH11 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:116:6: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  116 |      sprintf(tempStr, "temp: %d", intpart);
+      |      ^~~~~~~
+../Core/Src/main.c:116:6: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:28:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   27 | #include "DH11.h"
+  +++ |+#include <stdio.h>
+   28 | /* USER CODE END Includes */
+../Core/Src/main.c:114:19: warning: unused variable 'fracpart' [-Wunused-variable]
+  114 |      int intpart, fracpart;
+      |                   ^~~~~~~~
+arm-none-eabi-gcc -o "Lab4DH11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Valentyn\study\TERM4.1\InternetOfThings\projects\Lab4DH11\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab4DH11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.6.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o: in function `main':
+C:/Users/Valentyn/study/TERM4.1/InternetOfThings/projects/Lab4DH11/Debug/../Core/Src/main.c:95: undefined reference to `HAL_TIM_Base_Start'
+c:\st\stm32cubeide_1.6.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o: in function `MX_TIM1_Init':
+C:/Users/Valentyn/study/TERM4.1/InternetOfThings/projects/Lab4DH11/Debug/../Core/Src/main.c:204: undefined reference to `HAL_TIM_Base_Init'
+c:\st\stm32cubeide_1.6.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: C:/Users/Valentyn/study/TERM4.1/InternetOfThings/projects/Lab4DH11/Debug/../Core/Src/main.c:209: undefined reference to `HAL_TIM_ConfigClockSource'
+c:\st\stm32cubeide_1.6.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: C:/Users/Valentyn/study/TERM4.1/InternetOfThings/projects/Lab4DH11/Debug/../Core/Src/main.c:215: undefined reference to `HAL_TIMEx_MasterConfigSynchronization'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:69: Lab4DH11.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+11:06:02 Build Failed. 7 errors, 3 warnings. (took 1s.376ms)
+

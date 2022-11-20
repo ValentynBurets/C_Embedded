@@ -1,0 +1,12 @@
+led.c:11:6:lcdSend	16	static
+led.c:30:6:lcdCommand	16	static
+led.c:34:6:lcdChar	16	static
+led.c:38:6:setCursor	16	static
+led.c:43:6:parametrsToggle	24	static
+led.c:51:6:shiftToggle	24	static
+led.c:58:6:scrollRight	8	static
+led.c:62:6:scrollLeft	8	static
+led.c:66:6:clear	8	static
+led.c:72:6:home	8	static
+led.c:78:6:initLCD	8	static
+led.c:92:6:lcdString	24	static

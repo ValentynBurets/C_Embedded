@@ -1,0 +1,3 @@
+acoustic_sensor.c:7:6:acoustic_sensor_init	24	static
+acoustic_sensor.c:16:10:acoustic_sensor_read	24	static
+acoustic_sensor.c:34:10:acoustic_sensor_convert_duration	16	static

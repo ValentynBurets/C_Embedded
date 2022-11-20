@@ -1,0 +1,5 @@
+delay.c:5:6:delay_init	16	static
+delay.c:11:6:delay_ms	24	static
+delay.c:19:6:delay_us	24	static
+delay.c:25:10:delay_get_us_tick	4	static
+delay.c:30:10:delay_get_ms_tick	8	static

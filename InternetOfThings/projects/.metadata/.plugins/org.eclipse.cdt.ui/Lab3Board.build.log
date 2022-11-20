@@ -1,0 +1,33 @@
+16:46:11 **** Incremental Build of configuration Debug for project Lab3Board ****
+make -j8 all 
+arm-none-eabi-gcc -o "Lab3Board.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Valentyn\study\TERM4.1\InternetOfThings\projects\Lab2Board\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab3Board.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.6.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o: in function `lcdSend':
+C:/Users/Valentyn/study/TERM4.1/InternetOfThings/projects/Lab2Board/Debug/../Core/Src/display.c:3: multiple definition of `lcdSend'; ./Core/Src/display.o:C:/Users/Valentyn/study/TERM4.1/InternetOfThings/projects/Lab2Board/Debug/../Core/Src/display.c:3: first defined here
+c:\st\stm32cubeide_1.6.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o: in function `lcdCommand':
+C:/Users/Valentyn/study/TERM4.1/InternetOfThings/projects/Lab2Board/Debug/../Core/Src/display.c:22: multiple definition of `lcdCommand'; ./Core/Src/display.o:C:/Users/Valentyn/study/TERM4.1/InternetOfThings/projects/Lab2Board/Debug/../Core/Src/display.c:22: first defined here
+c:\st\stm32cubeide_1.6.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o: in function `lcdChar':
+C:/Users/Valentyn/study/TERM4.1/InternetOfThings/projects/Lab2Board/Debug/../Core/Src/display.c:25: multiple definition of `lcdChar'; ./Core/Src/display.o:C:/Users/Valentyn/study/TERM4.1/InternetOfThings/projects/Lab2Board/Debug/../Core/Src/display.c:25: first defined here
+c:\st\stm32cubeide_1.6.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o: in function `setCursor':
+C:/Users/Valentyn/study/TERM4.1/InternetOfThings/projects/Lab2Board/Debug/../Core/Src/display.c:30: multiple definition of `setCursor'; ./Core/Src/display.o:C:/Users/Valentyn/study/TERM4.1/InternetOfThings/projects/Lab2Board/Debug/../Core/Src/display.c:30: first defined here
+c:\st\stm32cubeide_1.6.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o: in function `parametrsToggle':
+C:/Users/Valentyn/study/TERM4.1/InternetOfThings/projects/Lab2Board/Debug/../Core/Src/display.c:33: multiple definition of `parametrsToggle'; ./Core/Src/display.o:C:/Users/Valentyn/study/TERM4.1/InternetOfThings/projects/Lab2Board/Debug/../Core/Src/display.c:33: first defined here
+c:\st\stm32cubeide_1.6.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o: in function `shiftToggle':
+C:/Users/Valentyn/study/TERM4.1/InternetOfThings/projects/Lab2Board/Debug/../Core/Src/display.c:40: multiple definition of `shiftToggle'; ./Core/Src/display.o:C:/Users/Valentyn/study/TERM4.1/InternetOfThings/projects/Lab2Board/Debug/../Core/Src/display.c:40: first defined here
+c:\st\stm32cubeide_1.6.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o: in function `scrollRight':
+C:/Users/Valentyn/study/TERM4.1/InternetOfThings/projects/Lab2Board/Debug/../Core/Src/display.c:46: multiple definition of `scrollRight'; ./Core/Src/display.o:C:/Users/Valentyn/study/TERM4.1/InternetOfThings/projects/Lab2Board/Debug/../Core/Src/display.c:46: first defined here
+c:\st\stm32cubeide_1.6.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o: in function `scrollLeft':
+C:/Users/Valentyn/study/TERM4.1/InternetOfThings/projects/Lab2Board/Debug/../Core/Src/display.c:49: multiple definition of `scrollLeft'; ./Core/Src/display.o:C:/Users/Valentyn/study/TERM4.1/InternetOfThings/projects/Lab2Board/Debug/../Core/Src/display.c:49: first defined here
+c:\st\stm32cubeide_1.6.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o: in function `clear':
+C:/Users/Valentyn/study/TERM4.1/InternetOfThings/projects/Lab2Board/Debug/../Core/Src/display.c:53: multiple definition of `clear'; ./Core/Src/display.o:C:/Users/Valentyn/study/TERM4.1/InternetOfThings/projects/Lab2Board/Debug/../Core/Src/display.c:53: first defined here
+c:\st\stm32cubeide_1.6.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o: in function `home':
+C:/Users/Valentyn/study/TERM4.1/InternetOfThings/projects/Lab2Board/Debug/../Core/Src/display.c:58: multiple definition of `home'; ./Core/Src/display.o:C:/Users/Valentyn/study/TERM4.1/InternetOfThings/projects/Lab2Board/Debug/../Core/Src/display.c:58: first defined here
+c:\st\stm32cubeide_1.6.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o: in function `initLCD':
+C:/Users/Valentyn/study/TERM4.1/InternetOfThings/projects/Lab2Board/Debug/../Core/Src/display.c:64: multiple definition of `initLCD'; ./Core/Src/display.o:C:/Users/Valentyn/study/TERM4.1/InternetOfThings/projects/Lab2Board/Debug/../Core/Src/display.c:64: first defined here
+c:\st\stm32cubeide_1.6.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o: in function `lcdString':
+C:/Users/Valentyn/study/TERM4.1/InternetOfThings/projects/Lab2Board/Debug/../Core/Src/display.c:78: multiple definition of `lcdString'; ./Core/Src/display.o:C:/Users/Valentyn/study/TERM4.1/InternetOfThings/projects/Lab2Board/Debug/../Core/Src/display.c:78: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:69: Lab3Board.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+16:46:15 Build Failed. 25 errors, 0 warnings. (took 3s.914ms)
+

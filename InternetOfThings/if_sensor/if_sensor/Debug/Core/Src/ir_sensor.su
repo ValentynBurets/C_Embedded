@@ -1,0 +1,9 @@
+ir_sensor.c:29:6:ir_sensor_init	16	static
+ir_sensor.c:41:6:ir_sensor_run	16	static
+ir_sensor.c:49:10:ir_sensor_get_distance	16	static
+ir_sensor.c:59:7:ir_sensor_idle_handler	16	static
+ir_sensor.c:64:7:ir_sensor_start_dalay_handler	16	static
+ir_sensor.c:74:6:ir_sensor_start	16	static
+ir_sensor.c:79:6:ir_sensor_stop	16	static
+ir_sensor.c:84:7:ir_sensor_work_handler	16	static
+ir_sensor.c:95:7:ir_sensor_wait_adc_handler	24	static
